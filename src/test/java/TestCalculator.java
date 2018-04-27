@@ -1,10 +1,17 @@
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class TestCalculator {
 
+
     StringCalculator calc;
+
+    @Before
+    public void setupTest(){
+        calc = new StringCalculator();
+    }
 
     @Test
     public void testEmptyString(){
